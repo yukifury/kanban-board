@@ -1,0 +1,70 @@
+.board_column_create {
+    background: #DFE3E6;
+    border-radius: 3px;
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    width: 100%;
+    max-width: 272px;
+
+    padding: 12px;
+
+    cursor: pointer;
+
+    height: fit-content;
+    max-height: 100%;
+
+    transition: background-color ease-in-out .25s;
+}
+
+.board_column_create:hover {
+    background: #c9d1d1;
+}
+
+.board_column_create > div {
+    display: flex;
+
+    gap: 8px;
+    height: 100%;
+    align-items: center;
+}
+
+.board_column_create > div > span {
+    color: #6B808C;
+    line-height: 19px;
+    font-size: 13px;
+}
+
+.board_column_creation {
+    height: fit-content;
+    padding: 12px;
+    width: 272px;
+    max-width: 100%;
+    background: #DFE3E6;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.board_column_creation .board_column_textarea {
+    width: 248px;
+}
+
+.board_column_creation button {
+    cursor: pointer;
+}
+
+.board_column_creation svg {
+    cursor: pointer;
+    transition: ease-in-out .25s;
+
+}
+
+.board_column_creation svg:hover {
+    cursor: pointer;
+    transform: scale(0.85);
+}

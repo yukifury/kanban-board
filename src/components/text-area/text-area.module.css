@@ -1,0 +1,19 @@
+.textarea {
+    box-shadow: 0 1px 4px 0 rgba(9, 45, 66, 0.25);
+    resize: none;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding-inline: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.textarea::placeholder {
+    color: #B8B9BB;
+    font-size: 13px;
+    line-height: 19px;
+}

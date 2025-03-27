@@ -1,0 +1,70 @@
+.board_card {
+    max-height: 350px;
+
+    max-width: 248px;
+    width: 100%;
+
+    user-select: none;
+
+    cursor: grab;
+    
+    transition: all ease-in-out 0.25s;
+
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+    -webkit-user-drag: element;
+}
+
+.board_card .content {
+    box-shadow: 0 1px 4px 0 rgba(9, 45, 66, 0.25);
+
+    border-radius: 3px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #fff;
+    padding-inline: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+
+.board_card .content:hover {
+    background-color: rgba(246, 246, 246, 0.6);
+}
+
+.board_card > .content > svg {
+    opacity: 0;
+    cursor: pointer;
+    width: 12px;
+    visibility: hidden;
+    transition: all ease-in-out 0.25s;
+}
+
+.board_card:hover > .content > svg {
+    opacity: 1;
+    visibility: visible;
+}
+
+.board_card > .content > span {
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 400;
+    user-select: none;
+}
+
+.board_card:-moz-drag-over {
+    width: 10000px;
+}
+
+
+.dragging {
+    z-index: 999;
+
+    transition: transform ease-in-out 0.25s;
+
+    transform: rotate(6deg) scale(0.9);
+
+    pointer-events: none;
+}

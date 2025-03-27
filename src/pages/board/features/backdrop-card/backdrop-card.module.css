@@ -1,0 +1,28 @@
+.ghost_card {
+    border-radius: 3px;
+    background-color: #C9D2D9;
+    width: 100%;
+
+    animation: ghost_card_appear 0.25s ease-in-out, ghost_card_pulse 2s ease-in-out infinite;
+}
+
+@keyframes ghost_card_appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes ghost_card_pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
