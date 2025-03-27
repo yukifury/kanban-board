@@ -11,4 +11,5 @@ export default defineConfig({
   server: {
     allowedHosts: ['29d8-2a01-b340-83-6378-ad31-2078-9bd7-c263.ngrok-free.app'],
   },
+  base: '/kanban-board',
 });

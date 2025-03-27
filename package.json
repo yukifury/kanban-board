@@ -10,11 +10,15 @@
     "preview": "vite preview",
     "test": "vitest",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
+  "homepage": "https://yukifury.github.io/kanban-board",
   "dependencies": {
     "@types/node": "^22.13.13",
     "@vkontakte/vkjs": "^2.0.1",
+    "gh-pages": "^6.3.0",
     "prettier": "^3.5.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
