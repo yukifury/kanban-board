@@ -40,7 +40,7 @@ npm run preview - для vite-предпросмотра
 Для запуска в режиме разработчика (могут быть неожиданные ре-рендеры компонентов из-за StrictMode)
 
 ```bash
-npm install --save-dev
+npm install
 npm run dev
 ```
 
