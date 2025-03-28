@@ -36,7 +36,7 @@ export const useDragAndDrop = (): UseDragAndDropProps => {
    *
    * Добавляет данные перетягиваемой карточки в верхние (useBoardContext) state-переменные
    * и регулирует изначальный оффсет для позиционирования перетягиваемой карточки под курсором.
-   * @param e - HTML drag-эвент
+   * @param event - HTML drag-эвент
    * @param cardRef - ref-объект перетягиваемой карточки
    * @param card - BasicCard объект перетягиваемой карточки
    */
